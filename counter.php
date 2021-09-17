@@ -8,7 +8,7 @@ function counter($counterFilePath)
         return "1";
     }
     else{
-        echo "GRA";
+        echo "GRA2 W KONCU DZIALA";
     }
     /* else if(is_file($counterFilePath))
     {
