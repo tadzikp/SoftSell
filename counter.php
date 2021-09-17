@@ -8,7 +8,7 @@ function counter($counterFilePath)
         return "1";
     }
     else{
-        echo "GRA3";
+        echo "GRA7";
     }
     /* else if(is_file($counterFilePath))
     {
