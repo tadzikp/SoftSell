@@ -12,8 +12,11 @@ function counter($counterFilePath)
         $file = fopen($counterFilePath, "r+");
         if(flock($file, LOCK_EX))
         {
-            $ = (int)fread($file, filesize($file));
-            
+            $state = (int)fread($file, filesize($file));
+            $state ++;
+            fseek($file, 0);
+            fwrite($file, $state);
+            flock($file, LOCK_UN);
         }
     }
 }
